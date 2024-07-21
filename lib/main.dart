@@ -1,5 +1,5 @@
 import 'package:change_theme/src/night_widget.dart';
-import 'package:change_theme/src/temp.dart';
+import 'package:change_theme/src/sun_widget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,7 +8,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
           children: [
             SizedBox(
               height: 200,
-              child: TempWidget(),
+              child: SunWidget(),
             ),
             SizedBox(
               height: 200,

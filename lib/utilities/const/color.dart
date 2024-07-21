@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-class AppColor{
+// AppColor class is used to store all the color constants used in the app
+// Usage: AppColor.white
+class AppColor {
   static const Color white = Color(0xffffffff);
   static const Color black = Color(0xff000000);
   static const Color blue = Color(0xff2384BA);
