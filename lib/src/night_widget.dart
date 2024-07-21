@@ -17,10 +17,10 @@ class _NightWidgetState extends State<NightWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColor.grey.withOpacity(0.9),
-      body: Stack(
-        children: [
-          Center(
-            child: Container(
+      body: Center(
+        child: Stack(
+          children: [
+            Container(
               height: switchHeight + 7,
               width: switchWidth + 7,
               decoration: BoxDecoration(
@@ -41,9 +41,7 @@ class _NightWidgetState extends State<NightWidget> {
                 ],
               ),
             ),
-          ),
-          Center(
-            child: ClipRRect(
+            ClipRRect(
               borderRadius: BorderRadius.circular(100),
               child: Container(
                 height: switchHeight,
@@ -121,8 +119,8 @@ class _NightWidgetState extends State<NightWidget> {
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
